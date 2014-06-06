@@ -1,0 +1,996 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27FF21001940E4D100E768C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FF20FF1940E4D100E768C9 /* main.m */; };
+		27FF21031940E4D100E768C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FF21021940E4D100E768C9 /* AppDelegate.m */; };
+		27FF21061940E4D100E768C9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FF21051940E4D100E768C9 /* ViewController.m */; };
+		27FF21091940E4D100E768C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27FF21071940E4D100E768C9 /* Main.storyboard */; };
+		27FF210B1940E4D100E768C9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27FF210A1940E4D100E768C9 /* Images.xcassets */; };
+		27FF21171940E4D100E768C9 /* Whats_HappeningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FF21161940E4D100E768C9 /* Whats_HappeningTests.m */; };
+		27FF212D1940E4E000E768C9 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FF212C1940E4E000E768C9 /* TodayViewController.m */; };
+		27FF212F1940E4E000E768C9 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27FF212E1940E4E000E768C9 /* MainInterface.storyboard */; };
+		27FF21321940E4E000E768C9 /* com.kinvey.Whats-Happening.WhatsHappening.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 27FF21241940E4E000E768C9 /* com.kinvey.Whats-Happening.WhatsHappening.appex */; };
+		27FF219C1941235D00E768C9 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FF21261940E4E000E768C9 /* NotificationCenter.framework */; };
+		27FF21A919412EEF00E768C9 /* WhatsHappeningKinveyWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 27FF21A819412EEF00E768C9 /* WhatsHappeningKinveyWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27FF21AF19412EF000E768C9 /* WhatsHappeningKinveyWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FF21A419412EEF00E768C9 /* WhatsHappeningKinveyWrapper.framework */; };
+		27FF21B619412EF000E768C9 /* WhatsHappeningKinveyWrapperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FF21B519412EF000E768C9 /* WhatsHappeningKinveyWrapperTests.m */; };
+		27FF21B919412EF000E768C9 /* WhatsHappeningKinveyWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FF21A419412EEF00E768C9 /* WhatsHappeningKinveyWrapper.framework */; };
+		27FF21BB19412EF000E768C9 /* WhatsHappeningKinveyWrapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27FF21A419412EEF00E768C9 /* WhatsHappeningKinveyWrapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		27FF21CF19412F0C00E768C9 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FF219019411EA300E768C9 /* Twitter.framework */; };
+		27FF21D019412F0C00E768C9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FF218E19411E9E00E768C9 /* CoreLocation.framework */; };
+		27FF21D119412F0C00E768C9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FF21481940E80400E768C9 /* MobileCoreServices.framework */; };
+		27FF21D219412F0C00E768C9 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FF213C1940E7F900E768C9 /* Accounts.framework */; };
+		27FF21D319412F0C00E768C9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FF213D1940E7F900E768C9 /* CFNetwork.framework */; };
+		27FF21D419412F0C00E768C9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FF213E1940E7F900E768C9 /* libsqlite3.dylib */; };
+		27FF21D519412F0C00E768C9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FF213F1940E7F900E768C9 /* Security.framework */; };
+		27FF21D619412F0C00E768C9 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FF21401940E7F900E768C9 /* Social.framework */; };
+		27FF21D719412F0C00E768C9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FF21411940E7F900E768C9 /* SystemConfiguration.framework */; };
+		27FF21D819412F0C00E768C9 /* KinveyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FF21391940E5C100E768C9 /* KinveyKit.framework */; };
+		27FF21D919412F0C00E768C9 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FF21261940E4E000E768C9 /* NotificationCenter.framework */; };
+		27FF21DC19412F6C00E768C9 /* KinveyHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 27FF21DA19412F6C00E768C9 /* KinveyHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27FF21DD19412F6C00E768C9 /* KinveyHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FF21DB19412F6C00E768C9 /* KinveyHandler.m */; };
+		27FF21DE19417D1D00E768C9 /* WhatsHappeningKinveyWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FF21A419412EEF00E768C9 /* WhatsHappeningKinveyWrapper.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27FF21111940E4D100E768C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27FF20F21940E4D100E768C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27FF20F91940E4D100E768C9;
+			remoteInfo = "Whats Happening";
+		};
+		27FF21301940E4E000E768C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27FF20F21940E4D100E768C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27FF21231940E4E000E768C9;
+			remoteInfo = WhatsHappening;
+		};
+		27FF21331940E4E000E768C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27FF20F21940E4D100E768C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27FF21231940E4E000E768C9;
+			remoteInfo = WhatsHappening;
+		};
+		27FF21B019412EF000E768C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27FF20F21940E4D100E768C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27FF21A319412EEF00E768C9;
+			remoteInfo = WhatsHappeningKinveyWrapper;
+		};
+		27FF21B719412EF000E768C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27FF20F21940E4D100E768C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27FF21A319412EEF00E768C9;
+			remoteInfo = WhatsHappeningKinveyWrapper;
+		};
+		27FF21BC19412EF000E768C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27FF20F21940E4D100E768C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27FF21A319412EEF00E768C9;
+			remoteInfo = WhatsHappeningKinveyWrapper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		27FF21381940E4E000E768C9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				27FF21321940E4E000E768C9 /* com.kinvey.Whats-Happening.WhatsHappening.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27FF21BA19412EF000E768C9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				27FF21BB19412EF000E768C9 /* WhatsHappeningKinveyWrapper.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		27FF20FA1940E4D100E768C9 /* Whats Happening.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Whats Happening.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27FF20FE1940E4D100E768C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27FF20FF1940E4D100E768C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		27FF21011940E4D100E768C9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		27FF21021940E4D100E768C9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		27FF21041940E4D100E768C9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		27FF21051940E4D100E768C9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		27FF21081940E4D100E768C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		27FF210A1940E4D100E768C9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		27FF21101940E4D100E768C9 /* Whats HappeningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Whats HappeningTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27FF21151940E4D100E768C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27FF21161940E4D100E768C9 /* Whats_HappeningTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Whats_HappeningTests.m; sourceTree = "<group>"; };
+		27FF21241940E4E000E768C9 /* com.kinvey.Whats-Happening.WhatsHappening.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "com.kinvey.Whats-Happening.WhatsHappening.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27FF21261940E4E000E768C9 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		27FF212A1940E4E000E768C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27FF212B1940E4E000E768C9 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		27FF212C1940E4E000E768C9 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		27FF212E1940E4E000E768C9 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		27FF21391940E5C100E768C9 /* KinveyKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KinveyKit.framework; sourceTree = "<group>"; };
+		27FF213C1940E7F900E768C9 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		27FF213D1940E7F900E768C9 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		27FF213E1940E7F900E768C9 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		27FF213F1940E7F900E768C9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		27FF21401940E7F900E768C9 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		27FF21411940E7F900E768C9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		27FF21481940E80400E768C9 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		27FF214A1940E8DB00E768C9 /* com.kinvey.Whats-Happening.WhatsHappening.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "com.kinvey.Whats-Happening.WhatsHappening.entitlements"; sourceTree = "<group>"; };
+		27FF214B1940E94A00E768C9 /* Whats Happening.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Whats Happening.entitlements"; sourceTree = "<group>"; };
+		27FF218E19411E9E00E768C9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		27FF219019411EA300E768C9 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		27FF219D194123B100E768C9 /* KCSKeychain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCSKeychain.h; sourceTree = "<group>"; };
+		27FF219E1941276500E768C9 /* KCSKeychain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCSKeychain.h; sourceTree = "<group>"; };
+		27FF21A419412EEF00E768C9 /* WhatsHappeningKinveyWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WhatsHappeningKinveyWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27FF21A719412EEF00E768C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27FF21A819412EEF00E768C9 /* WhatsHappeningKinveyWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhatsHappeningKinveyWrapper.h; sourceTree = "<group>"; };
+		27FF21AE19412EEF00E768C9 /* WhatsHappeningKinveyWrapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatsHappeningKinveyWrapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27FF21B419412EF000E768C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27FF21B519412EF000E768C9 /* WhatsHappeningKinveyWrapperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhatsHappeningKinveyWrapperTests.m; sourceTree = "<group>"; };
+		27FF21DA19412F6C00E768C9 /* KinveyHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KinveyHandler.h; sourceTree = "<group>"; };
+		27FF21DB19412F6C00E768C9 /* KinveyHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KinveyHandler.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27FF20F71940E4D100E768C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27FF21B919412EF000E768C9 /* WhatsHappeningKinveyWrapper.framework in Frameworks */,
+				27FF219C1941235D00E768C9 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27FF210D1940E4D100E768C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27FF21211940E4E000E768C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27FF21DE19417D1D00E768C9 /* WhatsHappeningKinveyWrapper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27FF21A019412EEF00E768C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27FF21CF19412F0C00E768C9 /* Twitter.framework in Frameworks */,
+				27FF21D019412F0C00E768C9 /* CoreLocation.framework in Frameworks */,
+				27FF21D119412F0C00E768C9 /* MobileCoreServices.framework in Frameworks */,
+				27FF21D219412F0C00E768C9 /* Accounts.framework in Frameworks */,
+				27FF21D319412F0C00E768C9 /* CFNetwork.framework in Frameworks */,
+				27FF21D419412F0C00E768C9 /* libsqlite3.dylib in Frameworks */,
+				27FF21D519412F0C00E768C9 /* Security.framework in Frameworks */,
+				27FF21D619412F0C00E768C9 /* Social.framework in Frameworks */,
+				27FF21D719412F0C00E768C9 /* SystemConfiguration.framework in Frameworks */,
+				27FF21D819412F0C00E768C9 /* KinveyKit.framework in Frameworks */,
+				27FF21D919412F0C00E768C9 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27FF21AB19412EEF00E768C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27FF21AF19412EF000E768C9 /* WhatsHappeningKinveyWrapper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27FF20F11940E4D100E768C9 = {
+			isa = PBXGroup;
+			children = (
+				27FF20FC1940E4D100E768C9 /* Whats Happening */,
+				27FF21131940E4D100E768C9 /* Whats HappeningTests */,
+				27FF21281940E4E000E768C9 /* WhatsHappening */,
+				27FF21A519412EEF00E768C9 /* WhatsHappeningKinveyWrapper */,
+				27FF21B219412EF000E768C9 /* WhatsHappeningKinveyWrapperTests */,
+				27FF21251940E4E000E768C9 /* Frameworks */,
+				27FF20FB1940E4D100E768C9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		27FF20FB1940E4D100E768C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27FF20FA1940E4D100E768C9 /* Whats Happening.app */,
+				27FF21101940E4D100E768C9 /* Whats HappeningTests.xctest */,
+				27FF21241940E4E000E768C9 /* com.kinvey.Whats-Happening.WhatsHappening.appex */,
+				27FF21A419412EEF00E768C9 /* WhatsHappeningKinveyWrapper.framework */,
+				27FF21AE19412EEF00E768C9 /* WhatsHappeningKinveyWrapperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27FF20FC1940E4D100E768C9 /* Whats Happening */ = {
+			isa = PBXGroup;
+			children = (
+				27FF219D194123B100E768C9 /* KCSKeychain.h */,
+				27FF214B1940E94A00E768C9 /* Whats Happening.entitlements */,
+				27FF21011940E4D100E768C9 /* AppDelegate.h */,
+				27FF21021940E4D100E768C9 /* AppDelegate.m */,
+				27FF21041940E4D100E768C9 /* ViewController.h */,
+				27FF21051940E4D100E768C9 /* ViewController.m */,
+				27FF21071940E4D100E768C9 /* Main.storyboard */,
+				27FF210A1940E4D100E768C9 /* Images.xcassets */,
+				27FF20FD1940E4D100E768C9 /* Supporting Files */,
+			);
+			path = "Whats Happening";
+			sourceTree = "<group>";
+		};
+		27FF20FD1940E4D100E768C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27FF20FE1940E4D100E768C9 /* Info.plist */,
+				27FF20FF1940E4D100E768C9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27FF21131940E4D100E768C9 /* Whats HappeningTests */ = {
+			isa = PBXGroup;
+			children = (
+				27FF21161940E4D100E768C9 /* Whats_HappeningTests.m */,
+				27FF21141940E4D100E768C9 /* Supporting Files */,
+			);
+			path = "Whats HappeningTests";
+			sourceTree = "<group>";
+		};
+		27FF21141940E4D100E768C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27FF21151940E4D100E768C9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27FF21251940E4E000E768C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27FF219019411EA300E768C9 /* Twitter.framework */,
+				27FF218E19411E9E00E768C9 /* CoreLocation.framework */,
+				27FF21481940E80400E768C9 /* MobileCoreServices.framework */,
+				27FF213C1940E7F900E768C9 /* Accounts.framework */,
+				27FF213D1940E7F900E768C9 /* CFNetwork.framework */,
+				27FF213E1940E7F900E768C9 /* libsqlite3.dylib */,
+				27FF213F1940E7F900E768C9 /* Security.framework */,
+				27FF21401940E7F900E768C9 /* Social.framework */,
+				27FF21411940E7F900E768C9 /* SystemConfiguration.framework */,
+				27FF21391940E5C100E768C9 /* KinveyKit.framework */,
+				27FF21261940E4E000E768C9 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		27FF21281940E4E000E768C9 /* WhatsHappening */ = {
+			isa = PBXGroup;
+			children = (
+				27FF219E1941276500E768C9 /* KCSKeychain.h */,
+				27FF214A1940E8DB00E768C9 /* com.kinvey.Whats-Happening.WhatsHappening.entitlements */,
+				27FF212B1940E4E000E768C9 /* TodayViewController.h */,
+				27FF212C1940E4E000E768C9 /* TodayViewController.m */,
+				27FF212E1940E4E000E768C9 /* MainInterface.storyboard */,
+				27FF21291940E4E000E768C9 /* Supporting Files */,
+			);
+			path = WhatsHappening;
+			sourceTree = "<group>";
+		};
+		27FF21291940E4E000E768C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27FF212A1940E4E000E768C9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27FF21A519412EEF00E768C9 /* WhatsHappeningKinveyWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				27FF21A819412EEF00E768C9 /* WhatsHappeningKinveyWrapper.h */,
+				27FF21DA19412F6C00E768C9 /* KinveyHandler.h */,
+				27FF21DB19412F6C00E768C9 /* KinveyHandler.m */,
+				27FF21A619412EEF00E768C9 /* Supporting Files */,
+			);
+			path = WhatsHappeningKinveyWrapper;
+			sourceTree = "<group>";
+		};
+		27FF21A619412EEF00E768C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27FF21A719412EEF00E768C9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27FF21B219412EF000E768C9 /* WhatsHappeningKinveyWrapperTests */ = {
+			isa = PBXGroup;
+			children = (
+				27FF21B519412EF000E768C9 /* WhatsHappeningKinveyWrapperTests.m */,
+				27FF21B319412EF000E768C9 /* Supporting Files */,
+			);
+			path = WhatsHappeningKinveyWrapperTests;
+			sourceTree = "<group>";
+		};
+		27FF21B319412EF000E768C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27FF21B419412EF000E768C9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		27FF21A119412EEF00E768C9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27FF21A919412EEF00E768C9 /* WhatsHappeningKinveyWrapper.h in Headers */,
+				27FF21DC19412F6C00E768C9 /* KinveyHandler.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		27FF20F91940E4D100E768C9 /* Whats Happening */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27FF211A1940E4D100E768C9 /* Build configuration list for PBXNativeTarget "Whats Happening" */;
+			buildPhases = (
+				27FF20F61940E4D100E768C9 /* Sources */,
+				27FF20F71940E4D100E768C9 /* Frameworks */,
+				27FF20F81940E4D100E768C9 /* Resources */,
+				27FF21381940E4E000E768C9 /* Embed App Extensions */,
+				27FF21BA19412EF000E768C9 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27FF21311940E4E000E768C9 /* PBXTargetDependency */,
+				27FF21341940E4E000E768C9 /* PBXTargetDependency */,
+				27FF21B819412EF000E768C9 /* PBXTargetDependency */,
+				27FF21BD19412EF000E768C9 /* PBXTargetDependency */,
+			);
+			name = "Whats Happening";
+			productName = "Whats Happening";
+			productReference = 27FF20FA1940E4D100E768C9 /* Whats Happening.app */;
+			productType = "com.apple.product-type.application";
+		};
+		27FF210F1940E4D100E768C9 /* Whats HappeningTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27FF211D1940E4D100E768C9 /* Build configuration list for PBXNativeTarget "Whats HappeningTests" */;
+			buildPhases = (
+				27FF210C1940E4D100E768C9 /* Sources */,
+				27FF210D1940E4D100E768C9 /* Frameworks */,
+				27FF210E1940E4D100E768C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27FF21121940E4D100E768C9 /* PBXTargetDependency */,
+			);
+			name = "Whats HappeningTests";
+			productName = "Whats HappeningTests";
+			productReference = 27FF21101940E4D100E768C9 /* Whats HappeningTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		27FF21231940E4E000E768C9 /* WhatsHappening */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27FF21351940E4E000E768C9 /* Build configuration list for PBXNativeTarget "WhatsHappening" */;
+			buildPhases = (
+				27FF21201940E4E000E768C9 /* Sources */,
+				27FF21211940E4E000E768C9 /* Frameworks */,
+				27FF21221940E4E000E768C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WhatsHappening;
+			productName = WhatsHappening;
+			productReference = 27FF21241940E4E000E768C9 /* com.kinvey.Whats-Happening.WhatsHappening.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		27FF21A319412EEF00E768C9 /* WhatsHappeningKinveyWrapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27FF21BE19412EF000E768C9 /* Build configuration list for PBXNativeTarget "WhatsHappeningKinveyWrapper" */;
+			buildPhases = (
+				27FF219F19412EEF00E768C9 /* Sources */,
+				27FF21A019412EEF00E768C9 /* Frameworks */,
+				27FF21A119412EEF00E768C9 /* Headers */,
+				27FF21A219412EEF00E768C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WhatsHappeningKinveyWrapper;
+			productName = WhatsHappeningKinveyWrapper;
+			productReference = 27FF21A419412EEF00E768C9 /* WhatsHappeningKinveyWrapper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		27FF21AD19412EEF00E768C9 /* WhatsHappeningKinveyWrapperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27FF21C119412EF000E768C9 /* Build configuration list for PBXNativeTarget "WhatsHappeningKinveyWrapperTests" */;
+			buildPhases = (
+				27FF21AA19412EEF00E768C9 /* Sources */,
+				27FF21AB19412EEF00E768C9 /* Frameworks */,
+				27FF21AC19412EEF00E768C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27FF21B119412EF000E768C9 /* PBXTargetDependency */,
+			);
+			name = WhatsHappeningKinveyWrapperTests;
+			productName = WhatsHappeningKinveyWrapperTests;
+			productReference = 27FF21AE19412EEF00E768C9 /* WhatsHappeningKinveyWrapperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27FF20F21940E4D100E768C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Kinvey;
+				TargetAttributes = {
+					27FF20F91940E4D100E768C9 = {
+						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 5W7CYNR7UE;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					27FF210F1940E4D100E768C9 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 27FF20F91940E4D100E768C9;
+					};
+					27FF21231940E4E000E768C9 = {
+						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 5W7CYNR7UE;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					27FF21A319412EEF00E768C9 = {
+						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 5W7CYNR7UE;
+					};
+					27FF21AD19412EEF00E768C9 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 27FF21A319412EEF00E768C9;
+					};
+				};
+			};
+			buildConfigurationList = 27FF20F51940E4D100E768C9 /* Build configuration list for PBXProject "Whats Happening" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 27FF20F11940E4D100E768C9;
+			productRefGroup = 27FF20FB1940E4D100E768C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27FF20F91940E4D100E768C9 /* Whats Happening */,
+				27FF210F1940E4D100E768C9 /* Whats HappeningTests */,
+				27FF21231940E4E000E768C9 /* WhatsHappening */,
+				27FF21A319412EEF00E768C9 /* WhatsHappeningKinveyWrapper */,
+				27FF21AD19412EEF00E768C9 /* WhatsHappeningKinveyWrapperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27FF20F81940E4D100E768C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27FF21091940E4D100E768C9 /* Main.storyboard in Resources */,
+				27FF210B1940E4D100E768C9 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27FF210E1940E4D100E768C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27FF21221940E4E000E768C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27FF212F1940E4E000E768C9 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27FF21A219412EEF00E768C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27FF21AC19412EEF00E768C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27FF20F61940E4D100E768C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27FF21061940E4D100E768C9 /* ViewController.m in Sources */,
+				27FF21031940E4D100E768C9 /* AppDelegate.m in Sources */,
+				27FF21001940E4D100E768C9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27FF210C1940E4D100E768C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27FF21171940E4D100E768C9 /* Whats_HappeningTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27FF21201940E4E000E768C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27FF212D1940E4E000E768C9 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27FF219F19412EEF00E768C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27FF21DD19412F6C00E768C9 /* KinveyHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27FF21AA19412EEF00E768C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27FF21B619412EF000E768C9 /* WhatsHappeningKinveyWrapperTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27FF21121940E4D100E768C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27FF20F91940E4D100E768C9 /* Whats Happening */;
+			targetProxy = 27FF21111940E4D100E768C9 /* PBXContainerItemProxy */;
+		};
+		27FF21311940E4E000E768C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27FF21231940E4E000E768C9 /* WhatsHappening */;
+			targetProxy = 27FF21301940E4E000E768C9 /* PBXContainerItemProxy */;
+		};
+		27FF21341940E4E000E768C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27FF21231940E4E000E768C9 /* WhatsHappening */;
+			targetProxy = 27FF21331940E4E000E768C9 /* PBXContainerItemProxy */;
+		};
+		27FF21B119412EF000E768C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27FF21A319412EEF00E768C9 /* WhatsHappeningKinveyWrapper */;
+			targetProxy = 27FF21B019412EF000E768C9 /* PBXContainerItemProxy */;
+		};
+		27FF21B819412EF000E768C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27FF21A319412EEF00E768C9 /* WhatsHappeningKinveyWrapper */;
+			targetProxy = 27FF21B719412EF000E768C9 /* PBXContainerItemProxy */;
+		};
+		27FF21BD19412EF000E768C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27FF21A319412EEF00E768C9 /* WhatsHappeningKinveyWrapper */;
+			targetProxy = 27FF21BC19412EF000E768C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		27FF21071940E4D100E768C9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27FF21081940E4D100E768C9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27FF21181940E4D100E768C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		27FF21191940E4D100E768C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27FF211B1940E4D100E768C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "Whats Happening/Whats Happening.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Whats Happening/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		27FF211C1940E4D100E768C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "Whats Happening/Whats Happening.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Whats Happening/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		27FF211E1940E4D100E768C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Whats Happening.app/Whats Happening";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Whats HappeningTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		27FF211F1940E4D100E768C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Whats Happening.app/Whats Happening";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Whats HappeningTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+		27FF21361940E4E000E768C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "WhatsHappening/com.kinvey.Whats-Happening.WhatsHappening.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WhatsHappening/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "com.kinvey.Whats-Happening.$(TARGET_NAME:rfc1034identifier)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		27FF21371940E4E000E768C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "WhatsHappening/com.kinvey.Whats-Happening.WhatsHappening.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = WhatsHappening/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "com.kinvey.Whats-Happening.$(TARGET_NAME:rfc1034identifier)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		27FF21BF19412EF000E768C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WhatsHappeningKinveyWrapper/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		27FF21C019412EF000E768C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = WhatsHappeningKinveyWrapper/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		27FF21C219412EF000E768C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WhatsHappeningKinveyWrapperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		27FF21C319412EF000E768C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WhatsHappeningKinveyWrapperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27FF20F51940E4D100E768C9 /* Build configuration list for PBXProject "Whats Happening" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27FF21181940E4D100E768C9 /* Debug */,
+				27FF21191940E4D100E768C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27FF211A1940E4D100E768C9 /* Build configuration list for PBXNativeTarget "Whats Happening" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27FF211B1940E4D100E768C9 /* Debug */,
+				27FF211C1940E4D100E768C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		27FF211D1940E4D100E768C9 /* Build configuration list for PBXNativeTarget "Whats HappeningTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27FF211E1940E4D100E768C9 /* Debug */,
+				27FF211F1940E4D100E768C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		27FF21351940E4E000E768C9 /* Build configuration list for PBXNativeTarget "WhatsHappening" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27FF21361940E4E000E768C9 /* Debug */,
+				27FF21371940E4E000E768C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		27FF21BE19412EF000E768C9 /* Build configuration list for PBXNativeTarget "WhatsHappeningKinveyWrapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27FF21BF19412EF000E768C9 /* Debug */,
+				27FF21C019412EF000E768C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		27FF21C119412EF000E768C9 /* Build configuration list for PBXNativeTarget "WhatsHappeningKinveyWrapperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27FF21C219412EF000E768C9 /* Debug */,
+				27FF21C319412EF000E768C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27FF20F21940E4D100E768C9 /* Project object */;
+}

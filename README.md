@@ -7,7 +7,6 @@ Sample App Showing Today Widget Extensions with KinveyKit
 1. Build and run
 2. Swipe down notification center
 3. Scroll to the bottom, tap "Edit" and add WhatsHappening
-4. Dismiss and bring back control center. (Doesn't update first time due to a bug)
 
 ## Requirements
 
